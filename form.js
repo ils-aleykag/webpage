@@ -1,16 +1,15 @@
-
-      let signupBtn=document.getElementById("signupbtn");
-      let siginBtn=document.getElementById("signinbtn");
-      let nameField=document.getElementById("namefield");
-      let Title=document.getElementById("title");
+let signupBtn=document.getElementById("signupbtn");
+let siginBtn=document.getElementById("signinbtn");
+let nameField=document.getElementById("namefield");
+let Title=document.getElementById("title");
 
       siginBtn.onclick = function(){
        //document.getElementById("namefield").style.display = "none"
-       nameField.style.maxHeight="0";
+       nameField.style.maxHeight="1";
        Title.innerHTML="Sign In";
        signupBtn.classList.add("disable");
        siginBtn.classList.remove("disable");
-    }
+      }
       signupBtn.onclick = function(){
         nameField.style.maxHeight="70px";
         //document.getElementById("namefield").style.display = "grid";
